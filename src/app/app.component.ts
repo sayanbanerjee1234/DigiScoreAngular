@@ -18,6 +18,7 @@ export class AppComponent {
   customerID:any;
   id:any;
   showData:boolean=false;
+  scoreRecomm:any;
 
   constructor(private appService: AppServiceService){}
 
@@ -30,6 +31,7 @@ export class AppComponent {
           if(response.recommendation!=null)
           this.recomendation=response.recommendation.split("|");
           this.customerID=response.customerPI;
+          this.scoreRecomm=response.scorerecommend;
         }
       }
     ))
