@@ -8,6 +8,6 @@ export class AppServiceService {
 
   constructor(private http:HttpClient) { }
   getCustomerDetails(id:any){
-    return this.http.get<any>('https://localhost:7037/api/DigiScore/'+id);
+    return this.http.get<any>('https://localhost:44312/api/DigiScore/'+id);
   }
 }
